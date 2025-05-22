@@ -167,6 +167,7 @@
 .login-right {
   overflow: hidden !important;
   flex: 1;
+  display: flex; /* Added display flex for proper centering */
   align-items: center;
   justify-content: center;
 }
@@ -174,8 +175,8 @@
 .login-logo-stack {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 31.25rem;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,8 +184,6 @@
 
 .logo-layer {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -192,20 +191,21 @@
 
 .logo-top {
   transform: rotate(-10deg);
-  width: 638px;
-  top: -43px;
-  left: -112px;
+  width: 39.875rem;
+  top: -2.6875rem;
+  left: -7rem;
   z-index: 3;
 }
 
 .logo-base {
   transform: rotate(-10deg);
-  top: 217px;
-  left: 75px;
+  top: 13.5625rem;
+  left: 4.6875rem;
   z-index: 2;
-  width: 280px;
+  width: 17.5rem;
 }
 
-.logo-text{
-  top: 400px;
+.logo-text {
+  top: 25rem; 
+  width: 15rem; 
 }
