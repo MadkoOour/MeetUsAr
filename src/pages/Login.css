@@ -3,7 +3,7 @@
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-  background-color: #beace8c2;
+  background: linear-gradient(to right, white, #beace8c2);
 }
 /* Left panel: form layout */
 .login-left {
