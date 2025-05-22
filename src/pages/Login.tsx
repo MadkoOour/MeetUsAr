@@ -96,7 +96,7 @@ const LoginPage: React.FC = () => {
             </div>
             {passwordError && <div className="error">{passwordError}</div>}
           </div>
-        <button type="submit" className="button" disabled={isButtonDisabled}>
+        <button type="submit" className="login-button" disabled={isButtonDisabled}>
           {authStatus === 'loading' ? 'Logging in...' : 'Login'}
         </button>
         </form>
