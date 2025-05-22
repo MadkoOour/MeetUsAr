@@ -1,4 +1,6 @@
 #root {
+  font-family: 'ABeeZee', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow: hidden;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;

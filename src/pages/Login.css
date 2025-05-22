@@ -1,0 +1,158 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: #beace8c2;
+}
+/* Left panel: form layout */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-logos-combine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.login-logos-combine img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.login-form .main-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+}
+
+.login-form .main-paragraph {
+  text-align: center;
+  max-width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color:#62626B;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 0;
+  background-color: #fff;
+  color: #000;
+}
+ 
+.input-wrapper {
+  position: relative;
+}
+ 
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: #888;
+  pointer-events: none;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #9414FF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* Right panel: logos combine */
+.login-right {
+  overflow: hidden !important;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo-stack {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-top {
+  transform: rotate(-10deg);
+  width: 638px;
+  top: -43px;
+  left: -112px;
+  z-index: 3;
+}
+
+.logo-base {
+  transform: rotate(-10deg);
+  top: 217px;
+  left: 75px;
+  z-index: 2;
+  width: 280px;
+}
+
+.logo-text{
+  top: 400px;
+}
