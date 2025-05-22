@@ -3,6 +3,9 @@ import { getToken } from './utils/auth';
 
 const api = axios.create({
   baseURL: 'https://api-yeshtery.dev.meetusvr.com/v1',
+  headers: {
+    'Content-Type': 'application/json'
+  }
 });
 
 api.interceptors.request.use((config) => {
