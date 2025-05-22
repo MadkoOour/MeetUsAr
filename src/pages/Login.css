@@ -163,6 +163,20 @@
   box-shadow: none;
 }
 
+.signup-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.signup-text .fake-link {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
 /* Right panel: logos combine */
 .login-right {
   overflow: hidden !important;

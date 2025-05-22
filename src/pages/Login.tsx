@@ -102,6 +102,9 @@ const LoginPage: React.FC = () => {
         <button type="submit" className="login-button" disabled={isButtonDisabled}>
           {authStatus === 'loading' ? 'Logging in...' : 'Login'}
         </button>
+        <div className="signup-text">
+          Don't have an account? <span className="fake-link">Sign up</span>
+        </div>
         </form>
       </div>
       <div className="login-right">
