@@ -63,8 +63,9 @@ const LoginPage: React.FC = () => {
     dispatch(login({ email, password }));
   };
 
-  // Only disable the button while loading; validations occur on submit
-  const isButtonDisabled = authStatus === 'loading';
+  // Disable the button while loading or if required fields are empty
+  const isButtonDisabled =
+    authStatus === 'loading' || email.trim() === '' || password.trim() === '';
 
   return (
     <div className="login-container">
